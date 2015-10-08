@@ -6,6 +6,7 @@ ENV PHPMYADMIN_VERSION=4.5.0.2
 RUN apt-get update && \
     apt-get install -y curl php5-fpm php5-mysql && \
     curl https://files.phpmyadmin.net/phpMyAdmin/${PHPMYADMIN_VERSION}/phpMyAdmin-${PHPMYADMIN_VERSION}-all-languages.tar.gz | tar -C /usr/share/nginx/html -xz --strip 1 && \
+    chmod g+w,o+w /usr/share/nginx/html && \
     apt-get purge -y curl --auto-remove && \
     rm -rf /var/lib/apt/lists/*
 

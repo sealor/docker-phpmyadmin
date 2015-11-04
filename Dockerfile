@@ -1,7 +1,7 @@
 FROM nginx
 MAINTAINER Stefan Richter (https://github.com/sealor)
 
-ENV PHPMYADMIN_VERSION=4.5.0.2
+ENV PHPMYADMIN_VERSION=4.5.1
 
 RUN apt-get update && \
     apt-get install -y curl php5-fpm php5-mysql && \

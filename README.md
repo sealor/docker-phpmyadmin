@@ -26,5 +26,7 @@ docker run --rm --add-host mysql:172.17.42.1 -p 1234:80 sealor/phpmyadmin
 ```
 ---
 
-**GitHub repository:**
-https://github.com/sealor/docker-phpmyadmin
+**Links:**
+* https://hub.docker.com/r/sealor/phpmyadmin/
+* https://github.com/sealor/docker-phpmyadmin
+* https://www.phpmyadmin.net/
